@@ -1,0 +1,30 @@
+#mapgrid{
+    height: 600px;
+    width: 600px;
+    border: solid 3px #61dafb;
+    color: red;
+    /* align-content: center; */
+    position: relative;
+    /* this allows me to manipulate objects within the map */
+/* margin-left: auto; */
+/* margin-right: auto; */
+/* background-color: aliceblue; */
+}
+.maptile{
+    width: 48px;
+    height: 48px;
+    border: solid 1px black;
+    color: green;
+    position: absolute;
+    /* position: relative; */
+}
+.player{
+    height: 20px;
+    width: 20px;
+    border-radius: 40%;
+    /* replace bg with a dragon image... and eventually animation? */
+   
+    z-index: 3;
+    background-color: red;
+    position: absolute;
+}
