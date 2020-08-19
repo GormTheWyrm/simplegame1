@@ -1,0 +1,16 @@
+.inputButtons{
+    /* width: 60px; */
+    /* height: 20px; */
+    border: solid lightcoral;
+    display: inline-block;
+    
+}
+.inputTextBox{
+    width: 160px;
+    height: 40px;
+    margin: 0px;
+    border: solid lightcoral;
+    /* display: inline-block; */
+    font-size: x-small;
+    float: right;
+}

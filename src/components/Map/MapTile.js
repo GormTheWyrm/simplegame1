@@ -7,6 +7,7 @@ function MapTile(props) {
 //may need to diplay other objects here...
 //such as player?
 
+
   return (
     <div className="maptile" 
     style={{left: props.xCoord + "px", 
