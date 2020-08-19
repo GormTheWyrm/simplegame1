@@ -10,13 +10,13 @@ function InputButtons(props) {
 
   return (
     <div className="inputButtons">
-        <button>Left</button>
+        <button onClick={props.handleLeftClick}>Left</button>
         <button>Right</button>
         <button>Up</button>
         <button>Down</button>
         <button>Test</button>
         <button>Test</button>
-        <button>Test</button>
+        <button onClick={props.testFunction}>Test</button>
     </div>
   );
 }

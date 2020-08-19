@@ -27,13 +27,13 @@ function Mapgrid(props) {
       for (let i = 0; i < gridsize; i++) {
         let tempTile = {};
         tempTile.x = (600 / gridsize * i); //this line of code is fucked... kinda
-        console.log("tempTile " + tempTile.x);
+        // console.log("tempTile " + tempTile.x);
         tempTile.y = (600 / gridsize * j);
         tileArray.push(tempTile);
         // console.log(tileArray);
-        console.log(tempTile);
+        // console.log(tempTile);
         tileNumber++;
-        console.log(tileNumber);
+        // console.log(tileNumber);
       }
         //where the fuck is the number 550 coming from!?
     }
@@ -86,6 +86,7 @@ function Mapgrid(props) {
       />
  */}
       <Player xCoord={props.playerX} yCoord={props.playerY} />
+      {/* <button style={{zIndex: 4, color:"yellowgreen"}} onClick={props.handleClickLeft}>testLeft</button> */}
     </div>
   );
 }

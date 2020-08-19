@@ -7,8 +7,9 @@ class MainPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            playerLocX: 0,
-            playerLocY: 0
+            playerLocX: 350,
+            playerLocY: 250
+            //increment these by 50!
 
 
         };
@@ -18,23 +19,35 @@ class MainPage extends React.Component {
     //need text box handle event function
     //will need to create changes in terrain... once I figure otu if thats what I even want
 
-    testFunction() {
+    testFunction = () => {
         console.log("test");
     }
-    handleClickLeft(){
+    handleClickLeft = () => {
         console.log("click");
-        this.setState({playerLocX: 50})
+        let oldX = this.state.playerLocX;
+        let newX = oldX - 50;
+        if (newX >= 0) {
+            this.setState({ playerLocX: newX })
+            console.log(this.state)
+        }
+        else {
+            console.log("cannot move left");
+        }
+
+
     }
-    
+
 
     render() {
         return (
             <div>
                 <Mapgrid playerX={this.state.playerLocX}
-                    playerY={this.state.playerLocX} />
+                    playerY={this.state.playerLocY} />
                 {/* insert input button and thne  text box so people on ipad can sort of play it */}
                 <div style={{ width: 600 + "px", border: "solid blue" }}>
-                    <InputButtons />
+                    <InputButtons handleLeftClick={this.handleClickLeft} 
+                    
+                    />
                     <InputTextBox />
 
                 </div>
