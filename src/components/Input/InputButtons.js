@@ -13,16 +13,16 @@ function InputButtons(props) {
       <div className="btnRow">
         {/* top div */}
 
-        <button className=" btn UpButton" onClick={props.handleUpClick}>Up</button>
+        <button className="btn upButton" onClick={props.handleUpClick}>Up</button>
       </div>
       <div className="btnRow">
         {/* middle div */}
         <button className="btn leftButton" onClick={props.handleLeftClick}>Left</button>
-        <button className="btn actionButton" onClick={props.testFunction}>Test</button>
+        <button className="btn actionButton" onClick={props.handleActionClick}>Fire</button>
         <button className="btn rightButton" onClick={props.handleRightClick}>Right</button>
 
       </div>
-      <div className="btnRow">
+      <div className="btn downButton">
         {/* bottom div */}
 
         <button className="btn DownButton" onClick={props.handleDownClick}>Down</button>
@@ -32,7 +32,7 @@ function InputButtons(props) {
       <div className="btnRow">
         {/* bottom div 2 */}
         <button className="btn">Test</button>
-        <button className="btn" >Test</button>
+        <button className="btn" style={{left: 40 + "px"}}>Test</button>
       </div>
 
     </div>

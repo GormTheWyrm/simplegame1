@@ -1,5 +1,5 @@
 .inputButtons{
-    /* width: 240px; */
+    width: 240px;
     /* height: 80px; */
     border: solid lightcoral;
     display: inline-block;
@@ -16,27 +16,24 @@
     float: right;
 }
 .leftButton{
-/* position: absolute; */
 display: inline-block;
 left: 0px;
 }
 .rightButton{
-    /* position: absolute; */
     display: inline-block;
-    right: 60px
+    /* left: 160px */
 }
 .upButton{
-    position: absolute;
-    /* display: inline-block; */
-    left: 60px;
-    top: 0px;
+    display: inline-block;
+    left: 42px;
+
+    color: blue;
 }
 .downButton{
-    /* position: absolute; */
     display: inline-block;
+    left: 33px;
 }
 .actionButton{
-    /* position: absolute; */
     display: inline-block;
 }
 .btnRow{
@@ -45,6 +42,7 @@ margin: 0px;
 .btn{
     /* this will be button stles, basic... */
     height: 30px;
-    color: red;
+    /* color: red; */
+    position: relative;
     
 }

@@ -10,11 +10,12 @@ function MapTile(props) {
 
   return (
     <div className="maptile" 
+    // ccc={props.handleChangeTile}
     style={{left: props.xCoord + "px", 
     bottom: props.yCoord + "px",
     backgroundColor: props.bgColor
     }}>
-        
+        {props.mynum} 
     </div>
   );
 }

@@ -10,6 +10,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 WORKING NOTES
+
+1. Need to set up github-pages-react!
+
+
+
+
+
+
+
 Setting up a grid:
 
 The grid should appear within a container.

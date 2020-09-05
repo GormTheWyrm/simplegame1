@@ -2,7 +2,7 @@ import React from 'react';
 import './map.css';
 
 
-function MapTile(props) {
+function Player(props) {
 
     return (
         <div className="player" 
@@ -16,4 +16,4 @@ function MapTile(props) {
       );
     }
     
-    export default MapTile;
+    export default Player;

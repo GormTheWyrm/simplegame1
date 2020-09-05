@@ -17,6 +17,7 @@
     color: green;
     position: absolute;
     /* position: relative; */
+    font-size: small;
 }
 .player{
     height: 20px;
