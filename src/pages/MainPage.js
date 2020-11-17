@@ -61,7 +61,7 @@ class MainPage extends React.Component {
         let newIndex = myIndex - 1;
         if (newX >= 0) {
             this.setState({ playerLocX: newX, playerLocIndex: newIndex })
-            console.log(this.state)
+            // console.log(this.state)
         }
         else {
             console.log("cannot move left");
@@ -75,7 +75,7 @@ class MainPage extends React.Component {
         let newIndex = myIndex + 1;
         if (newX < 600) {
             this.setState({ playerLocX: newX, playerLocIndex: newIndex })
-            console.log(this.state)
+            // console.log(this.state)
         }
         else {
             console.log("cannot move right");
@@ -89,7 +89,7 @@ class MainPage extends React.Component {
         let newIndex = myIndex + 12;
         if (newY < 600) {
             this.setState({ playerLocY: newY, playerLocIndex: newIndex })
-            console.log(this.state)
+            // console.log(this.state)
         }
         else {
             console.log("cannot move Up");
@@ -103,7 +103,7 @@ class MainPage extends React.Component {
         let newIndex = myIndex - 12;
         if (newY >= 0) {
             this.setState({ playerLocY: newY, playerLocIndex: newIndex })
-            console.log(this.state); //this is old state...
+            // console.log(this.state); //this is old state...
         }
         else {
             console.log("cannot move Up");
@@ -111,7 +111,7 @@ class MainPage extends React.Component {
     }
     handleClickAction = () => {
         console.log("action");
-        console.log(this.state.playerLocIndex);
+        // console.log(this.state.playerLocIndex);
         // I want to turn a specific tile a specific color...
         // do I need to pass a function to handle this into MapTile?
 
